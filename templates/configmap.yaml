@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mychart-configmap-{{ .Release.Name }}
+data:
+  myvalue: {{ .Release.Name }}
+  drink: {{ .Values.favoriteDrink }}
+  unsetkey: {{ .Values.unsetkey | default "unsetval" }}
+  namespaceannotations: {{ (lookup "v1" "Namespace" "" "mynamespace").items }}
