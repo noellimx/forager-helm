@@ -4,6 +4,6 @@ metadata:
   name: mychart-configmap-{{ .Release.Name }}
 data:
   myvalue: {{ .Release.Name }}
-  drink: {{ .Values.favoriteDrink }}
+  drink: {{ .Values.favoriteDrink | repeat 2 }}
   unsetkey: {{ .Values.unsetkey | default "unsetval" }}
   namespaceannotations: {{ (lookup "v1" "Namespace" "" "mynamespace").items }}
