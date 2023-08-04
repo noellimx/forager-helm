@@ -24,11 +24,36 @@ spec:
               protocol: TCP
 
 
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gear
+  labels:
+    app: gear
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gear
+  template:
+    metadata:
+      labels:
+        app: gear
+    spec:
+      containers:
+        - name: gear
+          image: "nginx:1.16.0"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 81
+              protocol: TCP
+
 apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-
 spec:
   type: NodePort
   selector:
