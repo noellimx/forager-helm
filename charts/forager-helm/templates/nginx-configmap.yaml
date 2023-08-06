@@ -10,7 +10,7 @@ data:
 
     http {
         server {
-            location /hello {
+            location / {
                 # Using the `echo` module to return the value of the environment variable
                 return 200 "$my_variable";
             }
