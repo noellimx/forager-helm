@@ -17,22 +17,29 @@ spec:
       containers:
         - name: nginx
           image: {{ .Values.nginxVersion | default "nginx:1.16.0" }}
-          volumeMounts:
-            - name: nginx-config-volume
-              mountPath: /etc/nginx/nginx.conf
-              subPath: nginx.conf
+          # volumeMounts:
+          #   - name: nginx-config-volume
+          #     mountPath: /etc/nginx/nginx.conf
+          #     subPath: nginx.conf
           env:
-            - name: my_variable
+            - name: my_variable_password
               valueFrom:
                 secretKeyRef:
                   name: my-secret
                   key: password
+            - name: my_variable_username
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: username
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 81
               protocol: TCP
-      volumes:
-        - name: nginx-config-volume
-          configMap:
-            name: nginx-config
+
+
+      # volumes:
+      #   - name: nginx-config-volume
+      #     configMap:
+      #       name: nginx-config
