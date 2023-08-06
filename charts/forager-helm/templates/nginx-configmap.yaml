@@ -12,7 +12,7 @@ data:
         server {
             location /hello {
                 # Using the `echo` module to return the value of the environment variable
-                return 302 /$my_variable;
+                return 200 "$my_variable";
             }
         }
     }
