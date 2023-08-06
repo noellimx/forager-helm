@@ -10,9 +10,9 @@ data:
 
     http {
         server {
-            location / {
+            location /hello {
                 # Using the `echo` module to return the value of the environment variable
-                echo "Received variable: $my_variable";
+                return 302 /$my_variable;
             }
         }
     }
