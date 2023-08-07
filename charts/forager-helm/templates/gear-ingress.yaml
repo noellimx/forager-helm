@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: gear-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
+    kubernetes.io/ingress.global-static-ip-name: "gear-ingress-ext-ip"
 spec:
   defaultBackend:
     service:

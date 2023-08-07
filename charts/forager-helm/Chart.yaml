@@ -15,12 +15,13 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.4-20230805-023
+version: 0.1.4-20230805-024
 
 # 0.1.4-20230805-020:  remove port config for gear service in deploymeny manifest
 # 0.1.4-20230805-021: [unstable] clean up
 # 0.1.4-20230805-022:  change gear service from loadbalancer to nodeport
 # 0.1.4-20230805-023: fix target service endpoint name gear -> gear-service
+# 0.1.4-20230805-024: change static ip name for gear
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
