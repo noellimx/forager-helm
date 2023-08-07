@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gear-load-balancer
+  name: gear-service
 spec:
   selector:
     app: gear

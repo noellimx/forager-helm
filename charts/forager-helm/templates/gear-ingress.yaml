@@ -7,6 +7,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: gear
+      name: gear-service
       port:
         number: 82
