@@ -1,12 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: basic-ingress
+  name: gear-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "forager"
+    kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
 spec:
   defaultBackend:
     service:
-      name: web
+      name: gear
       port:
-        number: 8080
+        number: 82
