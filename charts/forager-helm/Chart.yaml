@@ -41,8 +41,9 @@ type: application
 # 0.1.4-20230805-039: change sql set rep to 1 and add entrypoint
 # 0.1.4-20230805-040: 0.1.4-20230805-039
 # 0.1.4-20230805-041: change sql-set scale rep to 2
+# 0.1.4-20230805-042: use secret for sql root password
 
-version: 0.1.4-20230805-041
+version: 0.1.4-20230805-042
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
