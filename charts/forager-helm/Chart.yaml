@@ -15,7 +15,7 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.4-20230805-029
+version: 0.1.4-20230805-030
 
 # 0.1.4-20230805-020:  remove port config for gear service in deploymeny manifest
 # 0.1.4-20230805-021: [unstable] clean up
@@ -29,6 +29,7 @@ version: 0.1.4-20230805-029
 # 0.1.4-20230805-026-004
 # 0.1.4-20230805-027: 0.1.4-20230805-025
 # 0.1.4-20230805-029: add placeholder stateful set
+# 0.1.4-20230805-030: replace placeholder with actual volume in stateful set
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to

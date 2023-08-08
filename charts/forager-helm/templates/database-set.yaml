@@ -5,14 +5,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: mysql # Label selector that determines which Pods belong to the StatefulSet
-                 # Must match spec: template: metadata: labels
+      app: mysql
   serviceName: "mysql-service"
   replicas: 3
   template:
     metadata:
       labels:
-        app: mysql # Pod template's label selector
+        app: mysql 
     spec:
       terminationGracePeriodSeconds: 10
       containers:
@@ -22,13 +21,9 @@ spec:
         - containerPort: 80
           name: mysql
         volumeMounts:
-        - name: mysql-vol-placeholder
+        - name: mysql-vol
           mountPath: /usr/share/nginx/html
-  volumeClaimTemplates:
-  - metadata:
-      name: mysql-vol-placeholder
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 1Gi
+      volumes:
+        - name: mysql-vol
+          persistentVolumeClaim:
+            claimName: database-pvc
