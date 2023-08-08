@@ -22,8 +22,11 @@ spec:
         - containerPort: 80
           name: mysql-port
         volumeMounts:
-        - name: database-pvc
+        - name: database-pvc-vol
           mountPath: /var/lib/sql
-
+      volumes:
+      - name: database-pvc-vol
+        persistentVolumeClaim:
+          claimName: database-pvc
 
 
