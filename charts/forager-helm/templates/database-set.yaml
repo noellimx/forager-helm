@@ -16,13 +16,14 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: mysql
-        image: registry.k8s.io/nginx-slim:0.8
+        image: mysql:8.0.34
         ports:
-        - containerPort: 80
+        - containerPort: 3306
           name: mysql
         volumeMounts:
         - name: mysql-vol
-          mountPath: /usr/share/nginx/html
+          mountPath: /var/lib/mysql
+          subPath: mysql
       volumes:
         - name: mysql-vol
           persistentVolumeClaim:
