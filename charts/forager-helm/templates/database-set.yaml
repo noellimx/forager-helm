@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: mysql
-  serviceName: "mysql-service"
+  serviceName: "mysql-headless-service"
   replicas: 2
   template:
     metadata:

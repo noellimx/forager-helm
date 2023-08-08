@@ -33,8 +33,9 @@ type: application
 # 0.1.4-20230805-032: statefulset change to actual mysql container
 # 0.1.4-20230805-033: fix: set MYSQL_ROOT_PASSWORD for mysql set
 # 0.1.4-20230805-034: create headless service [mysql-service] for database
+# 0.1.4-20230805-035: create loadbalancer service [mysql-service] for database and rename existing [mysql-service] to [mysql-headless-service]
 
-version: 0.1.4-20230805-034
+version: 0.1.4-20230805-035
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
