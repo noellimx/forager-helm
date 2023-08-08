@@ -4,21 +4,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gear
+  name: forager
   labels:
-    app: gear
+    app: forager
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gear
+      app: forager
   template:
     metadata:
       labels:
-        app: gear
+        app: forager
     spec:
       containers:
-        - name: gear
-          image: "nginx:1.16.0"
+        - name: forager
+          image: noellimdev1/forager:latest
           imagePullPolicy: IfNotPresent
-
+          ports:
+          - containerPort: 8080
