@@ -39,8 +39,9 @@ type: application
 # 0.1.4-20230805-037 add MYSQL_ROOT_HOST:% to mysql config
 # 0.1.4-20230805-038: 0.1.4-20230805-07
 # 0.1.4-20230805-039: change sql set rep to 1 and add entrypoint
+# 0.1.4-20230805-040: change sql-set scale rep to 2
 
-version: 0.1.4-20230805-039
+version: 0.1.4-20230805-040
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
