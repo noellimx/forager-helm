@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: database-pod
+  name: database-stateful-set
 spec:
-  volumes:
-    - name: pvc-vol
-      persistentVolumeClaim:
-       claimName: database-pvc
   selector:
     matchLabels:
       app: mysql
-  serviceName: mysql
+  serviceName: "mysql-service"
   replicas: 3
+  updateStrategy:
+    type: RollingUpdate
   template:
     metadata:
       labels:
-        app: mysql 
+        app: mysql
     spec:
-      terminationGracePeriodSeconds: 10
       containers:
-      - name: nginx
-        image: registry.k8s.io/nginx-slim:0.8
+      - name: forager-mysql
+        image: mysql/mysql-server:8.0.28
         ports:
         - containerPort: 80
-          name: web
+          name: mysql-port
         volumeMounts:
-          - mountPath: /var/lib/mysql
-            name: pvc-demo-vol
+        - name: database-pvc
+          mountPath: /var/lib/sql
+
+
+
