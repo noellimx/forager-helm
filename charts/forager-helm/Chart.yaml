@@ -44,7 +44,14 @@ type: application
 # 0.1.4-20230805-042: use secret for sql root password
 # 0.1.4-20230805-043: change sql set rep to 1, update secret for sql root password
 
-version: 0.1.4-20230805-043
+# Replace gear with forager
+# NEW LABEL: forager
+# [# 0.1.4-20230808-001] Update Ingress
+# [ ] Update Service
+# [ ] Update Deployment
+#     - pull from registry
+
+version: 0.1.4-20230808-001
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
