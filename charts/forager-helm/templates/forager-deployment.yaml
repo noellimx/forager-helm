@@ -20,6 +20,6 @@ spec:
       containers:
         - name: forager
           image: noellimdev1/forager:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
           - containerPort: 8080

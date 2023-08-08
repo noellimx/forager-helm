@@ -49,9 +49,10 @@ type: application
 # [# 0.1.4-20230808-001] Update Ingress
 # [# 0.1.4-20230808-002] Update Service
 # [0.1.4-20230808-003] Update Deployment
-#     - pull from registry
+#                       - pull from registry
 
-version: 0.1.4-20230808-003
+# 0.1.4-20230808-004: pull image hash always
+version: 0.1.4-20230808-004
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
