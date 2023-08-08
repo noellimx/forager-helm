@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: mysql
   serviceName: "mysql-headless-service"
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
