@@ -6,3 +6,5 @@
 `kubeseal --fetch-cert --controller-namespace sealed-secrets --controller-name sealed-secrets`
 
 `kubeseal < sealed-secret-template.yaml > my-sealed-secret.yaml --controller-namespace sealed-secrets --controller-name=sealed-secrets --format yaml --scope cluster-wide`
+
+`kubectl exec --namespace=forager-helm mysql-set-0 -- env | grep MYSQL`
