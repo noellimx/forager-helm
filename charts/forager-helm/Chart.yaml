@@ -36,7 +36,8 @@ type: application
 # 0.1.4-20230805-035: create loadbalancer service [mysql-service] for database and rename existing [mysql-service] to [mysql-headless-service]
 # 0.1.4-20230805-035-002
 # 0.1.4-20230805-036 change nodeport for sql to 3306
-version: 0.1.4-20230805-036
+# 0.1.4-20230805-037 add MYSQL_ROOT_HOST:% to mysql config
+version: 0.1.4-20230805-037
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
