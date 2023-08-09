@@ -27,6 +27,6 @@ spec:
             - name: SPRING_DATASOURCE_URL
               # value: "a"
               valueFrom:
-                configMapRef:
+                configMapKeyRef:
                   name: database-configmap
                   key: spring_datasource_url
