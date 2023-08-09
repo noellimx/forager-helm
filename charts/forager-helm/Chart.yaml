@@ -52,7 +52,9 @@ type: application
 #                       - pull from registry
 
 # 0.1.4-20230808-004: pull image hash always
-version: 0.1.4-20230808-004
+# 0.1.4-20230808-005: SPRING_DATASOURCE_URL configmap
+
+version: 0.1.4-20230808-005
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to

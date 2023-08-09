@@ -7,3 +7,15 @@ data:
   drink: {{ .Values.favoriteDrink | repeat 2 }}
   unsetkey: {{ .Values.unsetkey | default "unsetval" }}
   namespaceannotations: {{ (lookup "v1" "Namespace" "" "mynamespace").items }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: database
+  namespace: forager-helm
+data:
+  spring_datasource_url: jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true
+  spring_datasource_username: root
+  spring_jpa_properties_hibernate_dialect: org.hibernate.dialect.MySQLDialect
+  spring_datasource_hikari_connectiontimeout: "3000"
+  spring_datasource_hikari_initializationfailtimeout: "-1"
