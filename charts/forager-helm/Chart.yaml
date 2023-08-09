@@ -55,9 +55,9 @@ type: application
 # 0.1.4-20230808-005: SPRING_DATASOURCE_URL configmap
 # 0.1.4-20230808-006: configmap remove unused var
 # 0.1.4-20230808-007: configmap fix namespace
-# 0.1.4-20230808-007-003: configmap fix namespace
+# 0.1.4-20230808-007-005: configmap fix namespace
 
-version: 0.1.4-20230808-007-003
+version: 0.1.4-20230808-007-005
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to

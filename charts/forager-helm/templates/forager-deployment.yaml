@@ -25,8 +25,8 @@ spec:
           - containerPort: 8080
           env:
             - name: SPRING_DATASOURCE_URL
-              value: "a"
-              # valueFrom:
-              #   configMapRef:
-              #     name: database
-              #     key: spring_datasource_url
+              # value: "a"
+              valueFrom:
+                configMapRef:
+                  name: database-configmap
+                  key: spring_datasource_url
