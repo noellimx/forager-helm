@@ -25,8 +25,34 @@ spec:
           - containerPort: 8080
           env:
             - name: SPRING_DATASOURCE_URL
-              # value: "a"
               valueFrom:
                 configMapKeyRef:
                   name: database-configmap
                   key: spring_datasource_url
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: database-configmap
+                  key: spring_datasource_username
+            - name: SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT
+              valueFrom:
+                configMapKeyRef:
+                  name: database-configmap
+                  key: spring_jpa_properties_hibernate_dialect
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: mysql_password
+            - name: SPRING_DATASOURCE_HIKARI_CONNECTIONTIMEOUT
+              valueFrom:
+                secretKeyRef:
+                  name: database-configmap
+                  key: spring_datasource_hikari_connectiontimeout
+            - name: SPRING_DATASOURCE_HIKARI_INITIALIZATIONFAILTIMEOUT
+              valueFrom:
+                secretKeyRef:
+                  name: database-configmap
+                  key: spring_datasource_hikari_initializationfailtimeout
+
+
