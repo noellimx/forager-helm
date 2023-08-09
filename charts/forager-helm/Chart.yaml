@@ -58,8 +58,9 @@ type: application
 # 0.1.4-20230808-007-006: configmap fix namespace
 # 0.1.4-20230808-007-007: set all db env to deployment
 # 0.1.4-20230808-007-008: 0.1.4-20230808-007-007
+# 0.1.4-20230808-007-009: fix use configmap instead of secret for conn timeout vals
 
-version: 0.1.4-20230808-007-008
+version: 0.1.4-20230808-007-009
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to

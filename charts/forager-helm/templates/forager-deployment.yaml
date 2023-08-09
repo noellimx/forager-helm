@@ -46,12 +46,12 @@ spec:
                   key: mysql_password
             - name: SPRING_DATASOURCE_HIKARI_CONNECTIONTIMEOUT
               valueFrom:
-                secretKeyRef:
+                configMapKeyRef:
                   name: database-configmap
                   key: spring_datasource_hikari_connectiontimeout
             - name: SPRING_DATASOURCE_HIKARI_INITIALIZATIONFAILTIMEOUT
               valueFrom:
-                secretKeyRef:
+                configMapKeyRef:
                   name: database-configmap
                   key: spring_datasource_hikari_initializationfailtimeout
 
