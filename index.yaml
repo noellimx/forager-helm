@@ -3,6 +3,16 @@ entries:
   forager-helm:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-08-09T05:38:34.237290239Z"
+    description: A Helm chart for Kubernetes
+    digest: c4fb1b753397b9020ce345c35941409d321752ccbe5a269166381cce2f171172
+    name: forager-helm
+    type: application
+    urls:
+    - https://github.com/noellimx/forager-helm/releases/download/forager-helm-0.1.4-20230808-007-006/forager-helm-0.1.4-20230808-007-006.tgz
+    version: 0.1.4-20230808-007-006
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-08-09T05:33:20.539986288Z"
     description: A Helm chart for Kubernetes
     digest: 65be5d1e0d392748624b1003753f7451fdaf64b51712b311fc40401563973706
@@ -571,4 +581,4 @@ entries:
     urls:
     - https://github.com/noellimx/forager-helm/releases/download/forager-helm-0.1.0/forager-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-09T05:33:20.540447203Z"
+generated: "2023-08-09T05:38:34.237673037Z"
