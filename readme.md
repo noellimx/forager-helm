@@ -1,18 +1,28 @@
 
 
 
-# draft
+# Contributing
+
+After edits, update the chart version in `Chart.yaml`. Version logs are also stored in `Chart.yaml`.
+
+## Generating Sealed Secrets
+
+### Requirements
+
+`kubeseal`
+
+### Steps
+
+0. Write your secrets manifest.
+
+1. Get public cert of your Sealed Secrets K8s controller
 
 `kubeseal --fetch-cert --controller-namespace sealed-secrets --controller-name sealed-secrets`
 
+2. Generate sealed version of your secrets manifest.
+
 `kubeseal < sealed-secret-template.yaml > my-sealed-secret.yaml --controller-namespace sealed-secrets --controller-name=sealed-secrets --format yaml --scope cluster-wide`
 
-`kubectl exec --namespace=forager-helm mysql-set-0 -- env | grep MYSQL`
 
+3. Copy into charts.
 
-SPRING_DATASOURCE_URL
-SPRING_DATASOURCE_USERNAME
-SPRING_DATASOURCE_PASSWORD
-SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT
-SPRING_DATASOURCE_HIKARI_CONNECTIONTIMEOUT
-SPRING_DATASOURCE_HIKARI_INITIALIZATIONFAILTIMEOUT
