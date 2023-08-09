@@ -4,7 +4,7 @@ metadata:
   name: database-configmap
   namespace: forager-helm
 data:
-  spring_datasource_url: jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true
+  spring_datasource_url: jdbc:mysql://{{ .Values.databaseHeadlessServiceName }}:3306/app?createDatabaseIfNotExist=true
   spring_datasource_username: root
   spring_jpa_properties_hibernate_dialect: org.hibernate.dialect.MySQLDialect
   spring_datasource_hikari_connectiontimeout: "3000"

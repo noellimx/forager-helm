@@ -44,13 +44,14 @@ type: application
 # 0.1.4-20230805-042: use secret for sql root password
 # 0.1.4-20230805-043: change sql set rep to 1, update secret for sql root password
 
-# Replace gear with forager
+# -----  Replace gear with forager
 # NEW LABEL: forager
 # [# 0.1.4-20230808-001] Update Ingress
 # [# 0.1.4-20230808-002] Update Service
 # [0.1.4-20230808-003] Update Deployment
 #                       - pull from registry
 
+# ----- connect app to db
 # 0.1.4-20230808-004: pull image hash always
 # 0.1.4-20230808-005: SPRING_DATASOURCE_URL configmap
 # 0.1.4-20230808-006: configmap remove unused var
@@ -59,8 +60,9 @@ type: application
 # 0.1.4-20230808-007-007: set all db env to deployment
 # 0.1.4-20230808-007-008: 0.1.4-20230808-007-007
 # 0.1.4-20230808-007-009: fix use configmap instead of secret for conn timeout vals
+# 0.1.4-20230808-007-010: use database service name
 
-version: 0.1.4-20230808-007-009
+version: 0.1.4-20230808-007-010
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
