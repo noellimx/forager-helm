@@ -1,5 +1,8 @@
+# Helm Charts for forager
 
+# Release Hook
 
+See `.github/workflows/release.yml`
 
 # Contributing
 
