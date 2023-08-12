@@ -17,16 +17,5 @@ spec:
       containers:
         - name: nginx
           image: {{ .Values.nginxVersion | default "nginx:1.16.0" }}
-          env:
-            - name: my_variable_password
-              valueFrom:
-                secretKeyRef:
-                  name: my-secret
-                  key: password
-            - name: my_variable_username
-              valueFrom:
-                secretKeyRef:
-                  name: my-secret
-                  key: username
           imagePullPolicy: IfNotPresent
 

@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: mysql-set
+  name: mysql-set-v2
 spec:
   selector:
     matchLabels:
       app: mysql
-  serviceName: "mysql-headless-service"
+  serviceName:  {{ .Values.databaseHeadlessServiceName }}
   replicas: 1
   template:
     metadata:
@@ -38,7 +38,7 @@ spec:
         - name: MYSQL_ROOT_HOST
           value: '%'
         ports:
-        - containerPort: 3306
+        - containerPort: 3308
           name: mysql
         volumeMounts:
         - name: mysql-vol
