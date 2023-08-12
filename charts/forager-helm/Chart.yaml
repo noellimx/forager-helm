@@ -62,9 +62,9 @@ type: application
 # 0.1.4-20230808-007-009: fix use configmap instead of secret for conn timeout vals
 # 0.1.4-20230808-007-010: use database service name
 
-# 0.1.4-20230808-007-012: harden database config
+# 0.1.4-20230812-007-001: harden database config
 
-version: 0.1.4-20230808-007-010
+version: 0.1.4-20230812-007-001
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
