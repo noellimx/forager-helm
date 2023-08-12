@@ -62,7 +62,9 @@ type: application
 # 0.1.4-20230808-007-009: fix use configmap instead of secret for conn timeout vals
 # 0.1.4-20230808-007-010: use database service name
 
-version: 0.1.4-20230808-007-010
+# 0.1.4-20230813-001: use database service name
+
+version: 0.1.4-20230813-001
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
