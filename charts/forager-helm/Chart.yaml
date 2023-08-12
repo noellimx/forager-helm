@@ -65,8 +65,9 @@ type: application
 # 0.1.4-20230812-007-001: harden database config
 # 0.1.4-20230812-007-002: fix for 001
 # 0.1.4-20230812-007-002-002: fix for 001
+# 0.1.4-20230812-007-002-003:
 
-version: 0.1.4-20230812-007-002-002
+version: 0.1.4-20230812-007-002-003
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
