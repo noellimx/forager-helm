@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: forager-ingress-service
+  name: {{ .Values.ingressServiceForager }}
 spec:
   selector:
     app: forager

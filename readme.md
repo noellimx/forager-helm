@@ -1,12 +1,19 @@
 # Helm Charts for forager
 
+# Usage
+
+```
+[1] Push to Github -> [2] Trigger versioned release -> [3] Pull version for deployment
+```
+
+# Contributing
+
+After edits, update the chart version in `Chart.yaml`. Changelogs are also stored in `Chart.yaml`.
+
 # Release Hook
 
 See `.github/workflows/release.yml`
 
-# Contributing
-
-After edits, update the chart version in `Chart.yaml`. Version logs are also stored in `Chart.yaml`.
 
 ## Generating Sealed Secrets
 

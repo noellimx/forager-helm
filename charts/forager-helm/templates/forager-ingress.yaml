@@ -8,6 +8,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: forager-ingress-service
+      name: {{ .Values.ingressServiceForager }}
       port:
         number: 8080

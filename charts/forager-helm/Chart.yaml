@@ -74,16 +74,14 @@ type: application
 # 0.1.4-20230813-008: 0.1.4-20230813-007
 # 0.1.4-20230813-008-stable: 0.1.4-20230813-008
 
-version: 0.1.4-20230813-008-stable
+# ---- Cleanup
+# 0.1.4-20230813-009: cleanup
+
+version: 0.1.4-20230813-009
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.16.0"
-# forager-helm     gear-load-balancer                 LoadBalancer   10.223.243.103   34.106.233.143   82:31559/TCP        6h52m
-# forager-helm     nginx-load-balancer                LoadBalancer   10.223.254.7     34.106.65.86     81:32145/TCP        6h52m
 
-# noel@yuzhou helm % gcloud compute addresses list
-# NAME     ADDRESS/RANGE  TYPE      PURPOSE  NETWORK  REGION    SUBNET  STATUS
-# forager  35.217.78.58   EXTERNAL                    us-west3          IN_USE
+appVersion: "1.16.0"
