@@ -4,4 +4,4 @@ metadata:
   name: {{ .Values.managedCertificatesForager }}
 spec:
   domains:
-    - forager.hopto.org
+    - {{ .Values.domainForager }}
