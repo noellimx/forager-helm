@@ -1,0 +1,7 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: forager-managed-cert
+spec:
+  domains:
+    - orager.hopto.org

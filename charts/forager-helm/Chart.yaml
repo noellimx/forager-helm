@@ -66,7 +66,10 @@ type: application
 # 0.1.4-20230813-002: change db cred
 # 0.1.4-20230813-003: change expose port
 
-version: 0.1.4-20230813-003
+# ----- Setup HTTP
+# 0.1.4-20230813-004: create google managed cert
+
+version: 0.1.4-20230813-004
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
