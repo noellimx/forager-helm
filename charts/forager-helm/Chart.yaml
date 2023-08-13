@@ -71,8 +71,9 @@ type: application
 # 0.1.4-20230813-005: config: add managed cert to ingress
 # 0.1.4-20230813-006: fix typo on domain name
 # 0.1.4-20230813-007: fix typo on variable name
+# 0.1.4-20230813-008: 0.1.4-20230813-007
 
-version: 0.1.4-20230813-007
+version: 0.1.4-20230813-008
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
