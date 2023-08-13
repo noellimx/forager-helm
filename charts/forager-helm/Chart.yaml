@@ -78,7 +78,10 @@ type: application
 # 0.1.4-20230813-009: cleanup
 # 0.1.4-20230813-010: set variable for domain name
 
-version: 0.1.4-20230813-010
+# ----- Setup HTTP for Forager Cont'd
+# 0.1.4-20230813-011:
+
+version: 0.1.4-20230813-011
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
