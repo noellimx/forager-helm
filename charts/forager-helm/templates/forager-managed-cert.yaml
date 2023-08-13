@@ -4,4 +4,4 @@ metadata:
   name: {{ Values.managedCertificatesForager }}
 spec:
   domains:
-    - orager.hopto.org
+    - forager.hopto.org
