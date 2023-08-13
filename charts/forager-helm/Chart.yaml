@@ -80,8 +80,9 @@ type: application
 
 # ----- Setup HTTP for Forager Cont'd
 # 0.1.4-20230813-011:
+# 0.1.4-20230813-011-stable:
 
-version: 0.1.4-20230813-011
+version: 0.1.4-20230813-011-stable
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
