@@ -66,10 +66,11 @@ type: application
 # 0.1.4-20230813-002: change db cred
 # 0.1.4-20230813-003: change expose port
 
-# ----- Setup HTTP
+# ----- Setup HTTP for Forager
 # 0.1.4-20230813-004: create google managed cert
+# 0.1.4-20230813-005: config: add managed cert to ingress
 
-version: 0.1.4-20230813-004
+version: 0.1.4-20230813-005
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
