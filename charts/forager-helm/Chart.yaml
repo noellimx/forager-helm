@@ -80,7 +80,7 @@ type: application
 
 # ----- Setup HTTP for Forager Cont'd
 # 0.1.4-20230813-011:
-# 0.1.4-20230813-011-stable:
+# 0.1.4-20230813-011-stable: disable http
 
 version: 0.1.4-20230813-011-stable
 
