@@ -4,6 +4,7 @@ metadata:
   name: forager-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "gear-ingress-ext-ip"
+    networking.gke.io/managed-certificates: {{ .Values.managedCertificatesForager }}
 spec:
   defaultBackend:
     service:
