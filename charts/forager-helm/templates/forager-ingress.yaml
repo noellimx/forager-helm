@@ -19,7 +19,7 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: {{ .Values.nodeportServiceForagerBE }}
+            name: {{ .Values.nodeportServiceForagerFE }}
             port:
               number: 8080
       - path: /api/*

@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
         - name: forager-fe
-          image: {{ "nginx:1.16.0" }}
-          imagePullPolicy: IfNotPresent
+          image: noellimdev1/forager-fe:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
 

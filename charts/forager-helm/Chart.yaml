@@ -86,8 +86,9 @@ type: application
 
 # 0.1.4-20230813-020: add services + trial to split be/fe traffic from forager-ingress
 # 0.1.4-20230813-021: path-based config for traffic into forager-ingress
+# 0.1.4-20230813-022: change repository target for frontend
 
-version: 0.1.4-20230813-021
+version: 0.1.4-20230813-022
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
