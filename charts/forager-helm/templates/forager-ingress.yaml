@@ -9,7 +9,7 @@ metadata:
 spec:
   # defaultBackend:
   #   service:
-  #     name: {{ .Values.ingressServiceForager }}
+  #     name: {{ .Values.nodeportServiceForagerBE }}
   #     port:
   #       number: 8080
   rules:
@@ -19,13 +19,13 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: {{ .Values.ingressServiceForagerFE }}
+            name: {{ .Values.nodeportServiceForagerBE }}
             port:
               number: 8080
-      - path: /auth
+      - path: /api/*
         pathType: ImplementationSpecific
         backend:
           service:
-            name: {{ .Values.ingressServiceForager }}
+            name: {{ .Values.nodeportServiceForagerBE }}
             port:
               number: 8080
