@@ -82,7 +82,11 @@ type: application
 # 0.1.4-20230813-011:
 # 0.1.4-20230813-011-stable: disable http
 
-version: 0.1.4-20230813-011-stable
+# ----- Setup Service for frontend:
+
+# 0.1.4-20230813-020: add services + trial to split be/fe traffic from forager-ingress
+
+version: 0.1.4-20230813-020
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forager-fe
+  labels:
+    app: forager-fe
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: forager-fe
+  template:
+    metadata:
+      labels:
+        app: forager-fe
+    spec:
+      containers:
+        - name: forager-fe
+          image: {{ "nginx:1.16.0" }}
+          imagePullPolicy: IfNotPresent
+

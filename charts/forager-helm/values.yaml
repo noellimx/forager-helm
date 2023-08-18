@@ -6,6 +6,7 @@ databaseHeadlessServiceName: mysql-headless-service
 # application: forager
 managedCertificatesForager: forager-managed-cert
 ingressServiceForager: forager-ingress-service
+ingressServiceForagerFE: forager-fe-nodeport-service
 domainForager: forager.hopto.org
 # Default values for ..
 # This is a YAML-formatted file.

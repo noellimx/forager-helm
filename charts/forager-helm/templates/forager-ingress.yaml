@@ -7,8 +7,25 @@ metadata:
     networking.gke.io/managed-certificates: {{ .Values.managedCertificatesForager }}
     kubernetes.io/ingress.allow-http: "false"
 spec:
-  defaultBackend:
-    service:
-      name: {{ .Values.ingressServiceForager }}
-      port:
-        number: 8080
+  # defaultBackend:
+  #   service:
+  #     name: {{ .Values.ingressServiceForager }}
+  #     port:
+  #       number: 8080
+  rules:
+  - http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Values.ingressServiceForagerFE }}
+            port:
+              number: 8080
+      - path: /auth
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Values.ingressServiceForager }}
+            port:
+              number: 8080
